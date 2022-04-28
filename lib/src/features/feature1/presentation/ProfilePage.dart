@@ -123,7 +123,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
       
-        SizedBox(height: 15,),
+        SizedBox(height: 20,),
            Padding(
              padding: const EdgeInsets.fromLTRB(10, 0, 8, 0),
              child: Row(
@@ -179,6 +179,53 @@ class _ProfilePageState extends State<ProfilePage> {
                ],
              ),
            ),
+           
+           SizedBox( height: 15,),
+
+           Padding(
+             padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+             child: Row(
+               
+                  children: [
+              Container(
+               height: 200,
+               width: 150,
+               decoration: BoxDecoration(
+                 color: Colors.grey,
+                 borderRadius: BorderRadius.circular(3),
+               ),
+           
+              //  child: 
+              //  CircleAvatar(
+              //    radius: 30,
+              //  ),
+              ),
+             SizedBox( width: 4,),
+             
+              Container(
+               height: 200,
+               width: 150,
+               decoration: BoxDecoration(
+                 color: Colors.grey,
+                 borderRadius: BorderRadius.circular(3),
+               ),
+           
+              //  child: 
+              //  CircleAvatar(
+              //    radius: 30,
+              //  ),
+              ),
+              
+           
+              
+           
+           
+           ],
+           
+             ),
+           ),
+
+
       
       
       
