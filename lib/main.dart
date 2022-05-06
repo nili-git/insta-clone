@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:instaapp/src/features/feature1/presentation/HomePage.dart';
-import 'package:instaapp/src/features/feature1/presentation/NavBar.dart';
+//import 'package:instaapp/src/features/feature1/presentation/NavBar.dart';
+import 'package:instaapp/src/features/feature2/presentation/appointment.dart';
 
 
 
@@ -19,8 +19,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Insta app',
-      home: NavBar( ),
+     // title: 'Insta app',
+     // home: NavBar( ),
+     title: "Appointment Screen",
+     home: AppointmentPage(),
     );
   }
 }
