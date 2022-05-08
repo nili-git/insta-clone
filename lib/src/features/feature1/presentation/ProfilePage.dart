@@ -123,7 +123,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
       
-        SizedBox(height: 15,),
+        SizedBox(height: 20,),
            Padding(
              padding: const EdgeInsets.fromLTRB(10, 0, 8, 0),
              child: Row(
@@ -134,7 +134,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   width: 320,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
-                    color: Colors.grey, 
+                    color: Colors.black, 
+                    border: Border.all(width: 0, 
+                   color: Colors.white,),
                     //border: ,
                   ),
                   child: Center(child: Text(" Edit Profile", style: TextStyle( color: Colors.white,))),
@@ -148,13 +150,9 @@ class _ProfilePageState extends State<ProfilePage> {
                    height: 30,
                    width: 30,
                    decoration: BoxDecoration(
-                    color: Colors.grey,
-                      // borderRadius: BorderRadius.only(
-                      //                   bottomLeft: Radius.circular(8),
-                      //                   bottomRight: Radius.circular(8),
-                      //                   topLeft: Radius.circular(0),
-                      //                   topRight: Radius.circular(0),
-                      //                 ),
+                    color: Colors.black,
+                     border: Border.all(width: 0, 
+                   color: Colors.white,),
                      borderRadius: BorderRadius.circular(5),
                    ),
                    child: 
@@ -179,6 +177,291 @@ class _ProfilePageState extends State<ProfilePage> {
                ],
              ),
            ),
+           
+           SizedBox( height: 15,),
+
+           Padding(
+             padding: const EdgeInsets.fromLTRB(10, 0, 0, 5),
+             child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+               child: Row( 
+                children: [
+                  
+                Container(
+                  padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                 height: 220,
+                 width: 150,
+                 //width: MediaQuery.of(context).size.width,
+                 decoration: BoxDecoration(
+                   border: Border.all(width: 0, 
+                   color: Colors.white,),
+                   color: Colors.black,
+                   borderRadius: BorderRadius.circular(3),
+                 ),
+
+                 child: Column(
+                   children: [
+                     Row(
+                       mainAxisAlignment: MainAxisAlignment.end,
+                       children: [
+                         IconButton(icon: Icon(Icons.close, color: Colors.white,), onPressed: () {  },)]),
+                     CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage("assets/img2.jpg"),
+                     ),
+                     SizedBox( height: 5,),
+                     Text(" Khadka Rishav", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,),),
+                     SizedBox( height: 5,),
+                     Text(" Follows you", style: TextStyle(color: Colors.white, fontWeight: FontWeight.normal,),),
+                   
+                    SizedBox( height: 10,),
+                  Padding(
+                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Container(
+                  height: 30,
+                  width: 125,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.blue,
+                  ),
+                  child: Center(
+                    child: Text("follow",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),),
+                  ),
+                ),
+              ),
+                   
+                   ],
+                   
+                  
+                 ),
+               
+                ),
+               SizedBox( width: 5,),
+             
+                 Container(
+                  padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                 height: 220,
+                 width: 150,
+                 //width: MediaQuery.of(context).size.width,
+                 decoration: BoxDecoration(
+                   border: Border.all(width: 0, 
+                   color: Colors.white,),
+                   color: Colors.black,
+                   borderRadius: BorderRadius.circular(3),
+                 ),
+                 
+                 child: Column(
+                   children: [
+                     Row(
+                       mainAxisAlignment: MainAxisAlignment.end,
+                       children: [
+                         IconButton(icon: Icon(Icons.close, color: Colors.white,), onPressed: () {  },)]),
+                     CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage("assets/img2.jpg"),
+                     ),
+                     SizedBox( height: 5,),
+                     Text(" Khadka Rishav", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,),),
+                     SizedBox( height: 5,),
+                     Text(" Follows you", style: TextStyle(color: Colors.white, fontWeight: FontWeight.normal,),),
+                     
+                      SizedBox( height: 10,),
+                  Padding(
+                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Container(
+                  height: 30,
+                  width: 125,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.blue,
+                  ),
+                  child: Center(
+                    child: Text("follow",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),),
+                  ),
+                ),
+              ),
+                   
+                   
+                   ],
+                    
+                  
+                 ),
+               
+               
+                ),
+
+                 SizedBox( width: 5,),
+             
+                  Container(
+                  padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                 height: 220,
+                 width: 150,
+                 //width: MediaQuery.of(context).size.width,
+                 decoration: BoxDecoration(
+                   border: Border.all(width: 0, 
+                   color: Colors.white,),
+                   color: Colors.black,
+                   borderRadius: BorderRadius.circular(3),
+                 ),
+                 
+                 child: Column(
+                   children: [
+                     Row(
+                       mainAxisAlignment: MainAxisAlignment.end,
+                       children: [
+                         IconButton(icon: Icon(Icons.close, color: Colors.white,), onPressed: () {  },)]),
+                     CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage("assets/img2.jpg"),
+                     ),
+                     SizedBox( height: 5,),
+                     Text(" Khadka Rishav", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,),),
+                     SizedBox( height: 5,),
+                     Text(" Follows you", style: TextStyle(color: Colors.white, fontWeight: FontWeight.normal,),),
+                  
+                   SizedBox( height: 10,),
+                  Padding(
+                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Container(
+                  height: 30,
+                  width: 125,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.blue,
+                  ),
+                  child: Center(
+                    child: Text("follow",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),),
+                  ),
+                ),
+              ),
+                  
+                   ],
+
+                   
+                   
+                  
+                 ),
+
+
+               
+                ),
+                
+               
+                
+               
+               
+               ],
+               
+               ),
+             ),
+           ),
+
+      SizedBox( height: 20,),
+         Padding(
+           padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+           child: Row(   
+             children: [
+               Text(" Story Highlights",
+               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,),),
+               Spacer(),
+               IconButton(onPressed: () {}, icon: Icon(Icons.arrow_drop_down_outlined, color: Colors.white,))
+             ],
+           ),
+         ),
+          SizedBox(height: 10,),
+          Row(
+
+          ),
+
+          //  Expanded(
+          //    child: Padding(
+          //      padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+          //      child: SizedBox(
+          //        child: ListView.builder(
+          //           scrollDirection: Axis.horizontal,
+          //           shrinkWrap: true,           
+          //            itemCount: 5,
+          //            itemBuilder: (BuildContext context,int index){
+          //             return Padding(
+          //               padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+          //               child: Container(
+          //                 padding: EdgeInsets.fromLTRB(5, 0, 5, 0),
+          //                 height: 300,
+          //                 width: 150,
+          //         // width: MediaQuery.of(context).size.width,
+          //          margin: const EdgeInsets.only(bottom: 0),
+          //          decoration: BoxDecoration(
+          //            border: Border.all(width: 0, 
+          //            color: Colors.white,),
+          //            color: Colors.black,
+          //            borderRadius: BorderRadius.circular(3),
+                    
+          //          ),
+
+          //           child: Column(
+          //          children: [
+          //            Row(
+          //              mainAxisAlignment: MainAxisAlignment.end,
+          //              children: [
+          //                Padding(padding: EdgeInsets.fromLTRB(0, 0, 0, 0)),
+          //                IconButton(icon: Icon(Icons.close, color: Colors.white,), onPressed: () {  },)]),
+          //            CircleAvatar(
+          //             radius: 40,
+          //             backgroundImage: AssetImage("assets/img2.jpg"),
+          //            ),
+          //            SizedBox( height: 2,),
+          //            Text(" Khadka Rishav", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,),),
+          //            SizedBox( height: 2,),
+          //            Text(" Follows you", style: TextStyle(color: Colors.white, fontWeight: FontWeight.normal,),),
+                  
+          //          SizedBox( height: 2,),
+          //         Padding(
+          //          padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+          //         child: Container(
+          //         height: 30,
+          //         width: 125,
+          //         decoration: BoxDecoration(
+          //           borderRadius: BorderRadius.circular(5),
+          //           color: Colors.blue,
+          //         ),
+          //         child: Center(
+          //           child: Text("follow",
+          //           style: TextStyle(
+          //             color: Colors.white,
+          //           ),),
+          //         ),
+          //       ),
+          //     ),
+                  
+          //          ],
+
+                   
+                   
+                  
+          //        ),
+
+
+
+                   
+                 
+
+          //         ),
+          //             );
+          //        }
+          //       ),
+          //      ),
+          //    ),
+          //  ),
+         
       
       
       

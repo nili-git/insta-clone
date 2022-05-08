@@ -1,13 +1,33 @@
 import 'package:flutter/material.dart';
+//import 'Sever/Server.dart';
 
 class FollowerPage extends StatefulWidget {
   const FollowerPage({ Key? key }) : super(key: key);
+
 
   @override
   State<FollowerPage> createState() => _FollowerPageState();
 }
 
 class _FollowerPageState extends State<FollowerPage> {
+ 
+//   SVBC svbc = SVBC();
+
+//   @override
+//   void initState() {
+// svbc.userRequest();
+//   super.initState();
+//   }
+
+  // void fetchData() async {
+  //   var user = await userRequest();
+  //   //loading = false;
+
+  //   //userList = user.data;
+  //   //userList = user.data;
+  //   setState(() {});
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
